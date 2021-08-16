@@ -1,0 +1,48 @@
+/*:host /deep/ ng2-smart-table-title a:focus { color: #009ECE; }
+
+:host /deep/ ng2-smart-table thead > tr > th > div { color: #009ECE; }
+
+:host /deep/ td.ng2-smart-actions a {cursor: pointer;color: #009ECE; }*/
+/*@import '../@theme/themes.scss';
+
+@include nb-install-component() {
+  nb-card {
+    transform: translate3d(0, 0, 0);
+  }
+}*/
+
+:host /deep/ ng2-smart-table table {
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+  border-width: 1px;
+
+  display: table;
+  border-spacing: 1px;
+  border-color: #d6d6d6; /* border of the big table*/
+}
+
+/* grid lines */
+:host /deep/ ng2-smart-table table > tbody > tr > td {
+  box-sizing: border-box;
+  border: 1px solid #d6d6d6;
+  background-color: rgba(255, 255, 255, 0.87);
+}
+
+/* headers grid color*/
+:host /deep/ ng2-smart-table thead > tr > th {
+  border: 1px solid #d6d6d6;
+  background-color: rgba(230, 255, 251, 0.26);
+}
+
+/*font size*/
+:host /deep/ ng2-smart-table {
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*font size*/
+:host /deep/ ng2-smart-table thead > tr:nth-child (4n) {
+background-color: #7a1c20;
+}
